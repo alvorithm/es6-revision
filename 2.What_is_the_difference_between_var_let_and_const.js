@@ -1,8 +1,8 @@
 // // cannot reassign new value to const variable only with let
-// // const name = "Lemuel";
-// //     name = Solomon;
-// let myname = "Lemuel";
-//     myname = "L Solomon";
+// // const name = "Alvorithm";
+// //     name = "Ikiguy";
+// let myname = "Alvorithm";
+//     myname = "A Ikiguy";
 // console.log(myname);
 
 
