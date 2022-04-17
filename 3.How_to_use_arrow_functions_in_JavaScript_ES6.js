@@ -23,8 +23,9 @@
 // const getInfo4 = name => `Name: ${name}`
 // console.log(getInfo4("Alvorithm Ikiguy", 33));
 
-// Function hositing, Variables and function initialisation logic, 
-// arrow function intiailisation and invoking logic
+// Function hositing, Variables and function execution logic, 
+// arrow function declaration and execution logic
+// F
 
 function greeting() {
     return "Hey there!";
