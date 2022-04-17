@@ -25,10 +25,22 @@
 
 // Function hositing, Variables and function execution logic, 
 // arrow function declaration and execution logic
-// Function declared and executed after fucntion dclaration - which is normal
+
+// // Function declared and executed after fucntion dclaration - which is normal
+
+// function greeting() {
+//     return "Hey there!";
+// }
+
+// console.log(greeting());
+
+// Function executed/invoked before function declaration which is 
+// allowed with normal fucntions becuase of hositing. This is 
+// possible becuase of hoisting.Functions and variables (of the function) 
+// are stored in memory upon definition/creation
+console.log(greeting());
 
 function greeting() {
     return "Hey there!";
 }
 
-console.log(greeting());
