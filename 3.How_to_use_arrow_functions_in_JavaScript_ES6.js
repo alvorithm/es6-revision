@@ -40,8 +40,19 @@
 // are stored in memory upon definition/creation but this does not work 
 // with stand alone variables
 
-// cannot access/execute/invoke standalone or global variables before 
-// intitialisation/declaration
+// // cannot access/execute/invoke standalone or global ;pet and const 
+// // variables before intitialisation/declaration - with var keyword 
+// // the default value ill be store as undefined
+
+// console.log(greeting());
+// console.log(name);
+
+// function greeting() {
+//     return "Hey there!";
+// }
+
+// const name = "Alvorithm Ikiguy";
+
 console.log(greeting());
 console.log(name);
 
@@ -49,4 +60,4 @@ function greeting() {
     return "Hey there!";
 }
 
-const name = "Alvorithm Ikiguy";
+var name = "Alvorithm Ikiguy";
