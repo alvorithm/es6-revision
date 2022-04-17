@@ -37,10 +37,16 @@
 // Function executed/invoked before function declaration which is 
 // allowed with normal fucntions becuase of hositing. This is 
 // possible becuase of hoisting.Functions and variables (of the function) 
-// are stored in memory upon definition/creation
+// are stored in memory upon definition/creation but this does not work 
+// with stand alone variables
+
+// cannot access/execute/invoke standalone or global variables before 
+// intitialisation/declaration
 console.log(greeting());
+console.log(name);
 
 function greeting() {
     return "Hey there!";
 }
 
+const name = "Alvorithm Ikiguy";
