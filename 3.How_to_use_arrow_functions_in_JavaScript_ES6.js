@@ -25,7 +25,7 @@
 
 // Function hositing, Variables and function execution logic, 
 // arrow function declaration and execution logic
-// F
+// Function declared and executed after fucntion dclaration - which is normal
 
 function greeting() {
     return "Hey there!";
