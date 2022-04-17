@@ -1,4 +1,4 @@
-// // cannot reassign new value to const variable onlye with let
+// // cannot reassign new value to const variable only with let
 // // const name = "Lemuel";
 // //     name = Solomon;
 // let myname = "Lemuel";
