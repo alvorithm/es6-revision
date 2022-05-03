@@ -64,9 +64,21 @@
 
 // var name = "Alvorithm Ikiguy";
 
-// we define arrow functions by equalliing them to a variable using 
-// the let and const keyword. Also, we can only invoke arrow 
-// functions after declaring them
+// // we define arrow functions by equalliing them to a variable using 
+// // the let and const keyword. Also, we can only invoke arrow 
+// // functions after declaring them
 
-const greeting2 = () => "Hey there!!";
-console.log(greeting2());
+// const greeting2 = () => "Hey there!!";
+// console.log(greeting2());
+
+
+// normal functions vs arrow functions: value of the this keyword
+
+const shape = {
+    radius: 10,
+    diameter: function() {
+        return this.radius * 2; 
+    }
+};
+
+console.log(shape.diameter(2));
