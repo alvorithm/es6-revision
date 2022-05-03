@@ -92,7 +92,7 @@ const hero = {
     greet: function() {
         setTimeout(
           function() {
-              console.log("Hi my name is", this.name")
+              console.log("Hi, my name is", this.name)
           }.bind(this),
           1000
         );
