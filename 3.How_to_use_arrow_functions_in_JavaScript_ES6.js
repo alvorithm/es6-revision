@@ -3,7 +3,6 @@
 //     return `Name: ${name}  - Age: ${age}`;
 // }
 
-
 // console.log(getInfo("Alvorithm Ikiguy", 33));
 
 // // arrow function using the arrow syntax, const keyword  without the
@@ -14,7 +13,7 @@
 
 // console.log(getInfo2("Alvorithm Ikiguy", 33));
 
-// // arrow function: no need for return statement and curly parenthesis 
+// // arrow function: no need for return statement and curly parenthesis
 // // when returning one value
 // const getInfo3 = (name, age) => `Name: ${name}  - Age: ${age}`;
 
@@ -24,7 +23,7 @@
 // const getInfo4 = name => `Name: ${name}`;
 // console.log(getInfo4("Alvorithm Ikiguy", 33));
 
-// Function hositing, Variables and function execution logic, 
+// Function hositing, Variables and function execution logic,
 // arrow function declaration and execution logic
 
 // // Function declared and executed after fucntion dclaration - which is normal
@@ -35,14 +34,14 @@
 
 // console.log(greeting());
 
-// // Function executed/invoked before function declaration which is 
-// // allowed with normal fucntions becuase of hositing. This is 
-// // possible becuase of hoisting.Functions and variables (of the function) 
-// // are stored in memory upon definition/creation but this does not work 
+// // Function executed/invoked before function declaration which is
+// // allowed with normal fucntions becuase of hositing. This is
+// // possible becuase of hoisting.Functions and variables (of the function)
+// // are stored in memory upon definition/creation but this does not work
 // // with stand alone variables
 
-// // cannot access/execute/invoke standalone or global ;pet and const 
-// // variables before intitialisation/declaration - with var keyword 
+// // cannot access/execute/invoke standalone or global ;pet and const
+// // variables before intitialisation/declaration - with var keyword
 // // the default value will be store as undefined
 // // but letr and const do not have this default value
 
@@ -64,39 +63,49 @@
 
 // var name = "Lemuel Solomon";
 
-// // we define arrow functions by equalliing them to a variable using 
-// // the let and const keyword. Also, we can only invoke arrow 
+// // we define arrow functions by equalliing them to a variable using
+// // the let and const keyword. Also, we can only invoke arrow
 // // functions after declaring them
 
 // const greeting2 = () => "Hey there!!";
 // console.log(greeting2());
-
 
 // normal functions vs arrow functions: value of the this keyword
 
 // const shape = {
 //     radius: 10,
 //     diameter: function() {
-//         return this.radius * 2; 
+//         return this.radius * 2;
 //     }
 // };
 
 // console.log(shape.diameter(2));
 
-
 // with arrow functions we do not have o use the bind method
 // with arrow functions we can specify wht the this keyword should refer to
 
 const hero = {
-    name: "Super Man",
-    greet: function() {
-        setTimeout(
-          function() {
-              console.log("Hi, my name is", this.name)
-          }.bind(this),
-          1000
-        );
-    }
+  name: "Super Man",
+  greet: function () {
+    setTimeout(
+      function () {
+        console.log("Hi, my name is", this.name);
+      }.bind(this),
+      1000
+    );
+  },
 };
 
 console.log(hero.greet());
+
+// arrow function with no bind method
+const hero1 = {
+  name1: "Super Man",
+  greet1: function () {
+    setTimeout(() => {
+      console.log("Hi, my name is", this.name);
+    }, 1000);
+  }
+};
+
+console.log(hero1.greet1());
