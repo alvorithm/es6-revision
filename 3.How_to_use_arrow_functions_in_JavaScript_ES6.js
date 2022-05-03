@@ -53,7 +53,7 @@
 //     return "Hey there!";
 // }
 
-// const name = "Alvorithm Ikiguy";
+// const name = "Lemuel Solomon";
 
 // console.log(greeting());
 // console.log(name);
@@ -62,7 +62,7 @@
 //     return "Hey there!";
 // }
 
-// var name = "Alvorithm Ikiguy";
+// var name = "Lemuel Solomon";
 
 // // we define arrow functions by equalliing them to a variable using 
 // // the let and const keyword. Also, we can only invoke arrow 
@@ -74,11 +74,29 @@
 
 // normal functions vs arrow functions: value of the this keyword
 
-const shape = {
-    radius: 10,
-    diameter: function() {
-        return this.radius * 2; 
+// const shape = {
+//     radius: 10,
+//     diameter: function() {
+//         return this.radius * 2; 
+//     }
+// };
+
+// console.log(shape.diameter(2));
+
+
+// with arrow functions we do not have o use the bind method
+// with arrow functions we can specify wht the this keyword should refer to
+
+const hero = {
+    name: "Super Man",
+    greet: function() {
+        setTimeout(
+          function() {
+              console.log("Hi my name is", this.name")
+          }.bind(this),
+          1000
+        );
     }
 };
 
-console.log(shape.diameter(2));
+console.log(hero.greet());
