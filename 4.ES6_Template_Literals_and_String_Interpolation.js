@@ -33,3 +33,30 @@ fetch(`${baseUrl}people/1/`)
 fetch(`${baseUrl}people/2/`)
    .then(res => res.json())
    .then(json => console.log(json));
+
+// expressions can be a returned value from a function
+
+const sum = (a, b) => `Sum: ${a + b}`;
+
+console.log(sum(7, 9));
+
+// template literals support multiline strings without having to use the 
+// new line symbol or escape character \n
+
+const result = `Template literals supoort multiline 
+strings`;
+
+console.log(result);
+
+// Template literals can be parsed as functions through the use of tags
+
+const greet = (greeting, name, age) => {
+   console.log(greeting);
+   console.log(name);
+   console.log(age);
+};
+
+const name = "Lemuel";
+const age = "32";
+
+greet`Hi, my name is ${name} and I am ${age} years young`;
